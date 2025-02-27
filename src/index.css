@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+     
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  
+    .animate-slideIn {
+      animation: slideIn 1s ease-in-out ;
+    }
+  }
+
+  /* Apply styles to WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101828; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #101828; /* Handle color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #101828;
+}
